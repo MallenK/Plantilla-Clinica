@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediSalud Premium - Clínica Médica Integral</title>
+    <meta name="description" content="Cuidado médico integral en MediSalud Premium. Especialistas en cardiología, dermatología, traumatología y medicina interna con tecnología avanzada.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <div class="nav__logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="#00BCD4"/>
+                        <path d="M16 6C13.79 6 12 7.79 12 10V12H8C6.9 12 6 12.9 6 14V22C6 23.1 6.9 24 8 24H24C25.1 24 26 23.1 26 22V14C26 12.9 25.1 12 24 12H20V10C20 7.79 18.21 6 16 6ZM16 8C17.1 8 18 8.9 18 10V12H14V10C14 8.9 14.9 8 16 8ZM24 14H8V22H24V14Z" fill="white"/>
+                    </svg>
+                </div>
+                <span class="nav__logo-text">MediSalud Premium</span>
+            </div>
+            <ul class="nav__menu">
+                <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="#servicios" class="nav__link">Servicios</a></li>
+                <li class="nav__item"><a href="#especialistas" class="nav__link">Especialistas</a></li>
+                <li class="nav__item"><a href="#diagnostico" class="nav__link">Diagnóstico</a></li>
+                <li class="nav__item"><a href="#tratamientos" class="nav__link">Tratamientos</a></li>
+                <li class="nav__item"><a href="#testimonios" class="nav__link">Testimonios</a></li>
+                <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+            <div class="nav__cta">
+                <a href="#contacto" class="btn btn--primary">Solicitar Cita</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Cuidado Médico Integral para Tu Bienestar</h1>
+                <p class="hero__subtitle">En MediSalud Premium, combinamos tecnología de punta con un equipo de especialistas dedicados a tu salud. Más de 15 años cuidando familias con la más alta calidad médica.</p>
+                <div class="hero__features">
+                    <div class="hero__feature">
+                        <svg class="hero__feature-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20,6 9,17 4,12"></polyline>
+                        </svg>
+                        <span>Médicos especialistas certificados</span>
+                    </div>
+                    <div class="hero__feature">
+                        <svg class="hero__feature-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20,6 9,17 4,12"></polyline>
+                        </svg>
+                        <span>Tecnología diagnóstica avanzada</span>
+                    </div>
+                    <div class="hero__feature">
+                        <svg class="hero__feature-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20,6 9,17 4,12"></polyline>
+                        </svg>
+                        <span>Atención personalizada 24/7</span>
+                    </div>
+                </div>
+                <div class="hero__actions">
+                    <a href="#contacto" class="btn btn--primary btn--lg">Solicitar Cita</a>
+                    <a href="#servicios" class="btn btn--secondary btn--lg">Ver Servicios</a>
+                </div>
+            </div>
+            <div class="hero__illustration">
+                <svg class="hero__svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Medical illustration -->
+                    <defs>
+                        <linearGradient id="medicalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00BCD4;stop-opacity:0.1"/>
+                            <stop offset="100%" style="stop-color:#E8F4F8;stop-opacity:0.3"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Stethoscope -->
+                    <path d="M120 80 C120 60, 140 40, 160 40 L160 80" stroke="#00BCD4" stroke-width="4" fill="none" stroke-linecap="round"/>
+                    <circle cx="160" cy="40" r="8" fill="#00BCD4"/>
+                    <path d="M160 80 C160 120, 140 140, 140 160 C140 180, 120 200, 100 200 C80 200, 60 180, 60 160" stroke="#00BCD4" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <circle cx="100" cy="200" r="15" fill="none" stroke="#00BCD4" stroke-width="2"/>
+                    
+                    <!-- Heart -->
+                    <path d="M200 100 C200 80, 220 60, 240 60 C260 60, 280 80, 280 100 C280 120, 260 140, 240 140 C220 140, 200 120, 200 100 Z" fill="url(#medicalGradient)" stroke="#00BCD4" stroke-width="2"/>
+                    
+                    <!-- Medical cross -->
+                    <rect x="190" y="170" width="20" height="60" fill="#00BCD4" rx="2"/>
+                    <rect x="170" y="190" width="60" height="20" fill="#00BCD4" rx="2"/>
+                    
+                    <!-- Plus signs -->
+                    <circle cx="320" cy="80" r="20" fill="none" stroke="#00BCD4" stroke-width="2"/>
+                    <line x1="320" y1="70" x2="320" y2="90" stroke="#00BCD4" stroke-width="2"/>
+                    <line x1="310" y1="80" x2="330" y2="80" stroke="#00BCD4" stroke-width="2"/>
+                    
+                    <circle cx="80" cy="120" r="15" fill="none" stroke="#00BCD4" stroke-width="2"/>
+                    <line x1="80" y1="113" x2="80" y2="127" stroke="#00BCD4" stroke-width="2"/>
+                    <line x1="73" y1="120" x2="87" y2="120" stroke="#00BCD4" stroke-width="2"/>
+                    
+                    <!-- Lines and connections -->
+                    <line x1="200" y1="200" x2="200" y2="240" stroke="#00BCD4" stroke-width="2" stroke-dasharray="5,5"/>
+                    <circle cx="200" cy="250" r="8" fill="#00BCD4"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nuestros Servicios Médicos</h2>
+                <p class="section__subtitle">Atención integral con los más altos estándares de calidad y tecnología médica avanzada</p>
+            </div>
+            <div class="services__grid">
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Cardiología</h3>
+                    <p class="service__description">Diagnóstico y tratamiento integral de enfermedades cardiovasculares con tecnología avanzada</p>
+                    <div class="service__price">Desde $85</div>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <path d="m16 10-4 4-4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Dermatología</h3>
+                    <p class="service__description">Cuidado especializado de la piel, tratamientos estéticos y dermatológicos avanzados</p>
+                    <div class="service__price">Desde $65</div>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Traumatología</h3>
+                    <p class="service__description">Tratamiento de lesiones óseas, musculares y articulares con rehabilitación especializada</p>
+                    <div class="service__price">Desde $75</div>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Medicina Interna</h3>
+                    <p class="service__description">Atención médica integral para adultos con enfoque preventivo y diagnóstico completo</p>
+                    <div class="service__price">Desde $55</div>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Medicina Preventiva</h3>
+                    <p class="service__description">Check-ups completos y programas de prevención personalizados para tu bienestar</p>
+                    <div class="service__price">Desde $120</div>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Medicina Familiar</h3>
+                    <p class="service__description">Atención médica integral para toda la familia con enfoque humano y personalizado</p>
+                    <div class="service__price">Desde $45</div>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Urgencias Médicas</h3>
+                    <p class="service__description">Atención de urgencias 24/7 con equipo médico especializado y tecnología de vanguardia</p>
+                    <div class="service__price">Desde $150</div>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11H1l3-3 3 3h-8l3-3 3 3h-8"/>
+                            <path d="M22 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Laboratorio Clínico</h3>
+                    <p class="service__description">Análisis clínicos completos con resultados rápidos y precisos para diagnóstico preciso</p>
+                    <div class="service__price">Desde $35</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialists Section -->
+    <section id="especialistas" class="specialists">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nuestros Especialistas</h2>
+                <p class="section__subtitle">Conoce a nuestro equipo de médicos especialistas certificados con amplia experiencia</p>
+            </div>
+            <div class="specialists__carousel">
+                <button class="carousel__btn carousel__btn--prev" id="prevBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <div class="specialists__container">
+                    <div class="specialists__track">
+                        <div class="specialist__card">
+                            <div class="specialist__image">
+                                <div class="specialist__placeholder">
+                                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="12" cy="7" r="4"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="specialist__name">Dra. Elena Vargas</h3>
+                            <p class="specialist__specialty">Cardióloga</p>
+                            <p class="specialist__credentials">15 años de experiencia • Certificada por la Sociedad Española de Cardiología</p>
+                        </div>
+
+                        <div class="specialist__card">
+                            <div class="specialist__image">
+                                <div class="specialist__placeholder">
+                                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="12" cy="7" r="4"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="specialist__name">Dr. Carlos Mendoza</h3>
+                            <p class="specialist__specialty">Dermatólogo</p>
+                            <p class="specialist__credentials">12 años de experiencia • Especialista en dermatología estética y clínica</p>
+                        </div>
+
+                        <div class="specialist__card">
+                            <div class="specialist__image">
+                                <div class="specialist__placeholder">
+                                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="12" cy="7" r="4"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="specialist__name">Dra. Ana Rodríguez</h3>
+                            <p class="specialist__specialty">Traumatóloga</p>
+                            <p class="specialist__credentials">18 años de experiencia • Especialista en medicina deportiva y rehabilitación</p>
+                        </div>
+
+                        <div class="specialist__card">
+                            <div class="specialist__image">
+                                <div class="specialist__placeholder">
+                                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="12" cy="7" r="4"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="specialist__name">Dr. Miguel Torres</h3>
+                            <p class="specialist__specialty">Internista</p>
+                            <p class="specialist__credentials">20 años de experiencia • Especialista en medicina interna y geriatría</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__btn carousel__btn--next" id="nextBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Diagnosis Section -->
+    <section id="diagnostico" class="quick-diagnosis">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Diagnóstico Rápido</h2>
+                <p class="section__subtitle">Selecciona tus síntomas para recibir una orientación inicial personalizada</p>
+            </div>
+            <div class="symptoms__grid">
+                <button class="symptom__btn" data-symptom="dolor-pecho">
+                    <svg class="symptom__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                    <span class="symptom__text">Dolor en el pecho</span>
+                </button>
+                <button class="symptom__btn" data-symptom="sarpullido">
+                    <svg class="symptom__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="m12 1 1.5 1.5L15 3l1.5-1.5L18 1l1.5 1.5L21 3l-1.5 1.5L21 6l-1.5 1.5L18 9l-1.5-1.5L15 7l-1.5 1.5L12 9l-1.5-1.5L9 7l-1.5 1.5L6 7l-1.5-1.5L3 6l1.5 1.5L3 3l1.5-1.5L6 1l1.5 1.5L9 3l-1.5 1.5L6 6l-1.5-1.5L3 3l1.5 1.5L3 1z"/>
+                    </svg>
+                    <span class="symptom__text">Sarpullido o manchas</span>
+                </button>
+                <button class="symptom__btn" data-symptom="lesion-articular">
+                    <svg class="symptom__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <circle cx="12" cy="12" r="6"/>
+                        <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                    <span class="symptom__text">Lesión articular</span>
+                </button>
+                <button class="symptom__btn" data-symptom="cansancio">
+                    <svg class="symptom__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 7v10h18V7l-9 4-9-4z"/>
+                        <path d="M8 11v6"/>
+                        <path d="M12 9v6"/>
+                        <path d="M16 11v6"/>
+                        <path d="M3 7l3 2 3-2"/>
+                        <path d="M21 7l-3 2-3-2"/>
+                    </svg>
+                    <span class="symptom__text">Cansancio extremo</span>
+                </button>
+                <button class="symptom__btn" data-symptom="fiebre">
+                    <svg class="symptom__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                    <span class="symptom__text">Fiebre persistente</span>
+                </button>
+                <button class="symptom__btn" data-symptom="dolor-abdominal">
+                    <svg class="symptom__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <path d="M3 9h18"/>
+                        <path d="M3 15h18"/>
+                        <path d="M9 3v18"/>
+                        <path d="M15 3v18"/>
+                    </svg>
+                    <span class="symptom__text">Dolor abdominal</span>
+                </button>
+            </div>
+            <div class="diagnosis__result" id="diagnosisResult">
+                <div class="diagnosis__content">
+                    <h3 class="diagnosis__title">Recomendación Personalizada</h3>
+                    <p class="diagnosis__text">Selecciona uno de los síntomas anteriores para recibir orientación específica sobre qué especialista consultar y próximos pasos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatments Section -->
+    <section id="tratamientos" class="treatments">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Planes de Tratamiento</h2>
+                <p class="section__subtitle">Tabla clara de nuestros tratamientos médicos y sus características</p>
+            </div>
+            <div class="treatments__table-container">
+                <table class="treatments__table">
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Duración</th>
+                            <th>Especialidad</th>
+                            <th>Características</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="treatment__name">
+                                <strong>Consulta Cardiológica</strong>
+                                <small>Evaluación cardiovascular completa</small>
+                            </td>
+                            <td>60 min</td>
+                            <td>Cardiología</td>
+                            <td>
+                                <ul>
+                                    <li>Electrocardiograma</li>
+                                    <li>Análisis de sangre</li>
+                                    <li>Ecocardiograma</li>
+                                </ul>
+                            </td>
+                            <td class="treatment__price">$85</td>
+                        </tr>
+                        <tr>
+                            <td class="treatment__name">
+                                <strong>Consulta Dermatológica</strong>
+                                <small>Evaluación dermatológica especializada</small>
+                            </td>
+                            <td>45 min</td>
+                            <td>Dermatología</td>
+                            <td>
+                                <ul>
+                                    <li>Examen de piel completo</li>
+                                    <li>Fotografía clínica</li>
+                                    <li>Biopsia si es necesario</li>
+                                </ul>
+                            </td>
+                            <td class="treatment__price">$65</td>
+                        </tr>
+                        <tr>
+                            <td class="treatment__name">
+                                <strong>Consulta Traumatológica</strong>
+                                <small>Evaluación de lesiones musculoesqueléticas</small>
+                            </td>
+                            <td>50 min</td>
+                            <td>Traumatología</td>
+                            <td>
+                                <ul>
+                                    <li>Radiografías digitales</li>
+                                    <li>Análisis de movimiento</li>
+                                    <li>Plan de rehabilitación</li>
+                                </ul>
+                            </td>
+                            <td class="treatment__price">$75</td>
+                        </tr>
+                        <tr>
+                            <td class="treatment__name">
+                                <strong>Consulta Medicina Interna</strong>
+                                <small>Atención médica integral</small>
+                            </td>
+                            <td>40 min</td>
+                            <td>Medicina Interna</td>
+                            <td>
+                                <ul>
+                                    <li>Examen físico completo</li>
+                                    <li>Historia clínica detallada</li>
+                                    <li>Plan de seguimiento</li>
+                                </ul>
+                            </td>
+                            <td class="treatment__price">$55</td>
+                        </tr>
+                        <tr>
+                            <td class="treatment__name">
+                                <strong>Check-up Anual Completo</strong>
+                                <small>Evaluación médica preventiva integral</small>
+                            </td>
+                            <td>2-3 horas</td>
+                            <td>Medicina Preventiva</td>
+                            <td>
+                                <ul>
+                                    <li>Análisis completo de sangre</li>
+                                    <li>Estudios de imagen</li>
+                                    <li>Evaluación de todos los sistemas</li>
+                                </ul>
+                            </td>
+                            <td class="treatment__price">$120</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Preguntas Frecuentes</h2>
+                <p class="section__subtitle">Encuentra respuestas a las dudas más comunes sobre nuestros servicios médicos</p>
+            </div>
+            <div class="faq__container">
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span class="faq__question-text">¿Cómo puedo agendar una cita médica?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Puedes agendar tu cita de tres formas: completando el formulario en esta página, llamando al teléfono +34 912 345 678, o enviando un WhatsApp al +34 666 123 456. También puedes visitar directamente nuestra clínica de lunes a viernes de 8:00 a 20:00 horas.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span class="faq__question-text">¿Qué documentos necesito llevar para mi primera consulta?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Para tu primera consulta debes traer: tu DNI o documento de identidad, la tarjeta sanitaria, los resultados de análisis o estudios médicos previos (si los tienes), una lista de medicamentos que tomes actualmente, y cualquier informe médico relevante. Si tienes seguro médico privado, también trae tu tarjeta del seguro.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span class="faq__question-text">¿Tienen convenio con seguros médicos?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Sí, tenemos convenio con las principales compañías de seguros médicos: Sanitas, Adeslas, DKV, MAPFRE, AXA, y Mutua Madrileña. También atendemos pacientes sin seguro médico con pago directo. Te recomendamos verificar tu cobertura específica antes de la cita.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span class="faq__question-text">¿Cuánto tiempo duran los resultados de laboratorio?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>La mayoría de resultados de laboratorio están disponibles en 24-48 horas. Los análisis urgentes pueden estar listos en 2-4 horas. Los resultados se envían por email de forma segura y puedes acceder también a través de nuestro portal de pacientes en línea. Los resultados más complejos pueden tardar hasta 72 horas.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span class="faq__question-text">¿Ofrecen atención de urgencias?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Sí, ofrecemos servicio de urgencias médicas 24/7 con un equipo de médicos especializados. Para emergencias vitales, siempre debes llamar al 112. Para urgencias no vitales, puedes llamar directamente a nuestro servicio de urgencias o presentarte en la clínica. El equipo de urgencias está disponible todos los días del año.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span class="faq__question-text">¿Puedo cancelar o reprogramar mi cita?</span>
+                        <svg class="faq__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Puedes cancelar o reprogramar tu cita hasta 24 horas antes de la hora programada sin ningún coste. Para cambios con menos de 24 horas de antelación, puede aplicarse un cargo del 50% del valor de la consulta. Los cambios se pueden hacer por teléfono, WhatsApp o a través de nuestro portal de pacientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Lo Que Dicen Nuestros Pacientes</h2>
+                <p class="section__subtitle">Testimonios reales de pacientes satisfechos con nuestros servicios médicos</p>
+            </div>
+            <div class="testimonials__carousel">
+                <button class="testimonials__btn testimonials__btn--prev" id="testimonialsPrev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <div class="testimonials__container">
+                    <div class="testimonials__track" id="testimonialsTrack">
+                        <div class="testimonial__card">
+                            <div class="testimonial__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p class="testimonial__text">"Excelente atención médica. La Dra. Vargas me detectó un problema cardíaco temprano que otros médicos no habían identificado. Su profesionalidad y dedicación son excepcionales."</p>
+                            <div class="testimonial__author">
+                                <div class="author__avatar">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="12" cy="7" r="4"/>
+                                    </svg>
+                                </div>
+                                <div class="author__info">
+                                    <h4 class="author__name">Carmen López</h4>
+                                    <p class="author__location">Madrid</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card">
+                            <div class="testimonial__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p class="testimonial__text">"Después de una lesión deportiva, la Dra. Rodríguez me ayudó a recuperarme completamente. Su tratamiento fue impecable y las instalaciones están a la vanguardia."</p>
+                            <div class="testimonial__author">
+                                <div class="author__avatar">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="12" cy="7" r="4"/>
+                                    </svg>
+                                </div>
+                                <div class="author__info">
+                                    <h4 class="author__name">Javier Martín</h4>
+                                    <p class="author__location">Barcelona</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card">
+                            <div class="testimonial__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p class="testimonial__text">"Los servicios de dermatología son excelentes. El Dr. Mendoza resolvió mi problema de piel que llevaba años tratando. Muy recomendable para cualquier consulta dermatológica."</p>
+                            <div class="testimonial__author">
+                                <div class="author__avatar">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="12" cy="7" r="4"/>
+                                    </svg>
+                                </div>
+                                <div class="author__info">
+                                    <h4 class="author__name">Ana García</h4>
+                                    <p class="author__location">Valencia</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card">
+                            <div class="testimonial__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p class="testimonial__text">"El Dr. Torres y todo el equipo de medicina interna me brindan una atención muy personalizada. Me siento muy seguro con su seguimiento médico profesional."</p>
+                            <div class="testimonial__author">
+                                <div class="author__avatar">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="12" cy="7" r="4"/>
+                                    </svg>
+                                </div>
+                                <div class="author__info">
+                                    <h4 class="author__name">Pedro Rodríguez</h4>
+                                    <p class="author__location">Sevilla</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="testimonials__btn testimonials__btn--next" id="testimonialsNext">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Solicita Tu Cita Médica</h2>
+                <p class="section__subtitle">Agenda tu consulta con nuestros especialistas. Te contactaremos para confirmar tu cita.</p>
+            </div>
+            <div class="contact__container">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <div class="contact__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Ubicación</h4>
+                            <p>Calle de la Salud, 123<br>28001 Madrid, España</p>
+                        </div>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Teléfono</h4>
+                            <p>+34 912 345 678<br>WhatsApp: +34 666 123 456</p>
+                        </div>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Email</h4>
+                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2d44434b426d404849445e4c4158495d5f4840445840034e4240">[email&#160;protected]</a><br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="81e2e8f5e0f2c1ece4e5e8f2e0edf4e5f1f3e4ece8f4ecafe2eeec">[email&#160;protected]</a></p>
+                        </div>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Horarios</h4>
+                            <p>Lun - Vie: 8:00 - 20:00<br>Sáb: 9:00 - 15:00<br>Urgencias 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form" id="appointmentForm">
+                    <div class="form__group">
+                        <label for="nombre" class="form__label">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="telefono" class="form__label">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email *</label>
+                        <input type="email" id="email" name="email" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="especialidad" class="form__label">Especialidad deseada *</label>
+                        <select id="especialidad" name="especialidad" class="form__input form__select" required>
+                            <option value="">Selecciona una especialidad</option>
+                            <option value="cardiologia">Cardiología</option>
+                            <option value="dermatologia">Dermatología</option>
+                            <option value="traumatologia">Traumatología</option>
+                            <option value="medicina-interna">Medicina Interna</option>
+                            <option value="medicina-preventiva">Medicina Preventiva</option>
+                            <option value="medicina-familiar">Medicina Familiar</option>
+                            <option value="urgencias">Urgencias</option>
+                            <option value="laboratorio">Laboratorio Clínico</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="fecha" class="form__label">Fecha preferida</label>
+                        <input type="date" id="fecha" name="fecha" class="form__input">
+                    </div>
+                    <div class="form__group form__group--full">
+                        <label for="comentarios" class="form__label">Comentarios adicionales</label>
+                        <textarea id="comentarios" name="comentarios" class="form__input form__textarea" rows="4" placeholder="Describe brevemente tus síntomas o motivo de consulta..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Solicitar Cita</button>
+                    <p class="form__note">* Campos obligatorios. Nos pondremos en contacto contigo en un plazo máximo de 24 horas para confirmar tu cita.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <div class="footer__logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="8" fill="#00BCD4"/>
+                                <path d="M16 6C13.79 6 12 7.79 12 10V12H8C6.9 12 6 12.9 6 14V22C6 23.1 6.9 24 8 24H24C25.1 24 26 23.1 26 22V14C26 12.9 25.1 12 24 12H20V10C20 7.79 18.21 6 16 6ZM16 8C17.1 8 18 8.9 18 10V12H14V10C14 8.9 14.9 8 16 8ZM24 14H8V22H24V14Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <span class="footer__logo-text">MediSalud Premium</span>
+                    </div>
+                    <p class="footer__description">Cuidando tu salud con la más alta calidad médica y tecnología avanzada. Más de 15 años de experiencia en medicina integral.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.222.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Servicios</h4>
+                    <ul class="footer__links">
+                        <li><a href="#servicios" class="footer__link">Cardiología</a></li>
+                        <li><a href="#servicios" class="footer__link">Dermatología</a></li>
+                        <li><a href="#servicios" class="footer__link">Traumatología</a></li>
+                        <li><a href="#servicios" class="footer__link">Medicina Interna</a></li>
+                        <li><a href="#servicios" class="footer__link">Medicina Preventiva</a></li>
+                        <li><a href="#servicios" class="footer__link">Urgencias 24/7</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Compañía</h4>
+                    <ul class="footer__links">
+                        <li><a href="#especialistas" class="footer__link">Nuestros Especialistas</a></li>
+                        <li><a href="#tratamientos" class="footer__link">Planes de Tratamiento</a></li>
+                        <li><a href="#testimonios" class="footer__link">Testimonios</a></li>
+                        <li><a href="#faq" class="footer__link">Preguntas Frecuentes</a></li>
+                        <li><a href="#contacto" class="footer__link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Legal</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Política de Privacidad</a></li>
+                        <li><a href="#" class="footer__link">Términos de Servicio</a></li>
+                        <li><a href="#" class="footer__link">Aviso Legal</a></li>
+                        <li><a href="#" class="footer__link">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 MediSalud Premium. Todos los derechos reservados. | Desarrollo por MiniMax Agent</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
